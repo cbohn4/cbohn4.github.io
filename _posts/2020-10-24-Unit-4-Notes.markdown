@@ -1,0 +1,104 @@
+---
+layout: default
+title:  "Unit 4: Variables, Conditionals, Functions"
+date:   2020-10-24 23:50:52 -0500
+categories: jekyll update
+---
+## Comments
+Comments in programming allow the programmers and developers to write notes in code. This allows blocks of code to have human language to describe what that section of code does. This also applies with explaining what functions and onEvents will do when executed or called. 
+
+In code, comments are started with `//` to tell the programming language to ignore that line of code.
+```javascript
+//This is an example of a comment
+```
+
+## Output
+In this guide, output will be represented in another code block. Rather than displaying output in an app on [code.org](https://code.org), this guide will output to the console log in the prior mentioned code block. 
+
+## Variables
+
+Variables are a way to store different types of information in programming. 
+# **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
+### Data typed available in variables
+#### Integer
+Integers are whole numbers such as 1,53,-5, and 97
+```javascript
+78
+```
+#### String
+Strings are letters and words we see in natural language such as this sentence. In javascript, strings are surrounded or encapsulated in quotes `" "`.
+```javascript
+"In javascript, strings are surrounded or encapsulated in quotes."
+```
+# **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
+### Declare a variable
+In javascript, you decalre a variable with `var` and then the name of the variable as shown below.
+```javascript
+var variableName;
+```
+You can also assign an initial value to a variable when you declare a variable.
+```javascript
+var variableName = "This is a value";
+```
+
+# **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
+### Using a variable
+Similar to math, variables can be substituted with information they store.
+```javascript
+var aNumber = 60;
+var anotherNumber;
+anotherNumber = 90;
+
+
+var result = aNumber + anotherNumber;
+// These two lines do the same thing and set the variables `result` to 150
+var result = 60      + 90;
+```
+
+## Conditionals
+Conditionals are a way to comapre multiple values.
+
+### Definitions
+
+Boolean - True or False value
+#### Comparison Operator -
+With comparison operators, you are asking if something is true to the question the statement is asking.
+
+*   a \> b    - Is `a` greater than `b`?
+*   a \>= b   - Is `a` greater than or equal to`b`?
+*   a < b     - Is `a` less than `b`?
+*   a <= b    - Is `a` less than or equal to `b`?
+*   a == b    - Is `a` equal to or the same value as `b`?
+*   a != b    - Is `a` not equal to or the same value as `b`?
+
+
+
+#### Logical Operator -
+Logical operators allow you to evaluate multiple expressions at the same time to make decisions.
+
+* AND    - Are the expressions on both sides true? If they are, then this is true, else it is false.
+* OR     - Is atleast one of the expressions on either side true? If so, then this is true. If none are true, then return false.
+
+#### If / If-Else / If-Else if
+If statements ask if a condition is true. If they are true, do the instructions inside.
+```javascript
+if (conditionHere) {
+  // Do something here
+}
+
+// Example
+var someValue = 12;
+if (someValue >= 10){ // This checks to see if the value in 
+  console.log("someValue is greater than or equal to 10");
+}
+```
+```
+someValue is greater than or equal to 10
+```
+
+### Watch out for:
+When using logical operators, you need to ask about each side. In human language we may ask `Is the day Saturday or Sunday?`. Computers would not be able to understand this, instead they need to be asked `Is the day Saturday or is the day Sunday?`
+
+```javascript
+//Remember strings need to be in quotes.
+```
